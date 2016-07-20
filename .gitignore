@@ -1,0 +1,3 @@
+#ignore some test directories
+batch_rename_test
+batch_rename_test copy
