@@ -6,9 +6,9 @@
 
 #created 20-Jul-2016 by William Laney and Ben Powell
 
-for file in *.mp4; do
+for file in *.[Mm][pP]4; do
 newFilename=$(echo $file | sed -E 's/GOPR/GP00/')
-newFilename=$(echo $newFilename | sed -E 's/GP([0-9]{2})([0-9]{4})\.mp4/\2_GP\1\.mp4/')
+newFilename=$(echo $newFilename | sed -E 's/GP([0-9]{2})([0-9]{4})\.[Mm][Pp]4|.MP4/\2_GP\1\.mp4/')
 mv $file $newFilename 
 done 
 echo "done"
